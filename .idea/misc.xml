@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/drawable-v24/status_shape.xml" value="0.128" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/drawable/button_shape.xml" value="0.228" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/drawable/camera_default.xml" value="0.208" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/drawable/camera_default_size_s.xml" value="0.2205" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/drawable/camera_details_size_m.xml" value="0.2205" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/drawable/logout.xml" value="0.208" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/activity_camera_details.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/activity_cameras.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/activity_login.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/camera_item.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/fragment_camera_details.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/fragment_cameras.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/fragment_login.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/layout_appbar.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/layout/layout_banner.xml" value="0.30078125" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/menu/back_arrow_menu.xml" value="0.2" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/menu/top_bar_menu.xml" value="0.2109375" />
+        <entry key="..\:/Users/kacpe/OneDrive/Pulpit/Nowy folder (2)/TrineoAppRecruitment/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/drawable/button_shape.xml" value="0.2385" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/drawable/camera_default.xml" value="0.2185" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/activity_camera_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/activity_cameras.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/activity_home.xml" value="0.5309139784946236" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/camera_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/content_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/example.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/fragment_camera_details.xml" value="0.264" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/fragment_cameras.xml" value="0.2260127931769723" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/fragment_login.xml" value="0.29389312977099236" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/layout_appbar.xml" value="0.23118279569892472" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/layout/layout_banner.xml" value="0.38125" />
+        <entry key="..\:/Users/kacpe/TrineoAppRecruitment/app/src/main/res/menu/top_bar_menu.xml" value="0.22734375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

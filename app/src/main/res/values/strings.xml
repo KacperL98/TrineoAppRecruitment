@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TrineoAppRecruitment</string>
+
+    //Dialog
+    <string name="alert_title">Alert</string>
+    <string name="logout_message">If you want to close the application press "Logout", if not click "Cancel"</string>
+    <string name="cancel_dialog">Cancel</string>
+    <string name="logout_info_dialog">Logout</string>
+    //Dialog
+
+    //Login
+    <string name="login_issue_auth">There is an authentication / authorization problem</string>
+    <string name="error_unexpected">Unexpected error, please try again!</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    //Login
+
+    //Cameras
+    <string name="list_cameras">Cameras</string>
+    <string name="camera_list_downloaded">Camera list downloaded</string>
+    <string name="error_unexpected_camera_list">An unexpected problem has occurred, please close applications and login again!</string>
+    //Cameras
+
+    //DetailsCamera
+    <string name="ip_camera">Camera IP:</string>
+    <string name="timezone_camera">Timezone:</string>
+    <string name="serial_number_camera">Serial number:</string>
+    <string name="video_status_camera">Video status:</string>
+    <string name="guid_camera">Guid:</string>
+    <string name="camera_status">Camera status:</string>
+    //DetailsCamera
+
+</resources>

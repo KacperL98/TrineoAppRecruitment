@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/normal_margin"
+    app:cardCornerRadius="@dimen/small_radius"
+    app:cardElevation="@dimen/small_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/normal_padding">
+
+        <ImageView
+            android:id="@+id/camera_default_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_default_size_s" />
+
+        <TextView
+            android:id="@+id/camera_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:textSize="@dimen/normal_text_size"
+            tools:text="Camera name" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
