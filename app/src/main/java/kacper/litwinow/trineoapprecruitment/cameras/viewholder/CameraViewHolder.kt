@@ -14,7 +14,7 @@ class CameraViewHolder(private val binding: CameraItemBinding) :
 
     fun bind(camera: Camera, onCameraClick: OnCameraClick) {
         with(binding) {
-            cameraName.text = camera.getName()
+            cameraName.text = camera.toCameraInfo().name
             root.setOnClickListener {
                 onCameraClick.invoke(camera)
             }

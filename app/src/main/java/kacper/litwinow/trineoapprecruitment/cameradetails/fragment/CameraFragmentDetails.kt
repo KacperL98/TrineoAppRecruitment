@@ -26,7 +26,7 @@ class CameraFragmentDetails : BaseFragment<FragmentCameraDetailsBinding>() {
             timezoneCamera.text = cameraInfo?.timezone
             serialNumberCamera.text = cameraInfo?.serial_number
             guidCamera.text = cameraInfo?.guid
-            cameraStatus.text = cameraInfo?.getDeviceStatus()
+            cameraStatus.text = cameraInfo?.getDeviceStatus().toString()
             onBackAction()
         }
     }

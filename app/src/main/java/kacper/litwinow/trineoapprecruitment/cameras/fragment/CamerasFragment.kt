@@ -37,32 +37,34 @@ class CamerasFragment : BaseFragment<FragmentCamerasBinding>() {
         binding.rvCameras.adapter = camerasAdapter
 
         camerasViewModel.result.observe(viewLifecycleOwner) { result ->
-            when (result) {
-                Error -> {
-                    binding.progressBar.gone()
-                    binding.errorUnexpected.show()
-                }
+            with(binding) {
+                when (result) {
+                    Error -> {
+                        progressBar.gone()
+                        errorUnexpected.show()
+                    }
 
-                Loading -> {
-                    binding.progressBar.show()
-                    binding.errorUnexpected.gone()
-                }
+                    Loading -> {
+                        progressBar.show()
+                        errorUnexpected.gone()
+                    }
 
-                is CamerasSuccess -> {
-                    binding.progressBar.gone()
-                    binding.errorUnexpected.gone()
-                    camerasAdapter.submitList(result.camera)
-                    requireContext().toastMessage(R.string.camera_list_downloaded)
-                }
+                    is CamerasSuccess -> {
+                        progressBar.gone()
+                        errorUnexpected.gone()
+                        camerasAdapter.submitList(result.camera)
+                        requireContext().toastMessage(R.string.camera_list_downloaded)
+                    }
 
-                CamerasEmpty -> {
-                    binding.progressBar.gone()
-                    binding.errorUnexpected.show()
-                }
+                    CamerasEmpty -> {
+                        progressBar.gone()
+                        errorUnexpected.show()
+                    }
 
-                UnAuthorize -> {
-                    binding.progressBar.gone()
-                    binding.errorUnexpected.show()
+                    UnAuthorize -> {
+                        progressBar.gone()
+                        errorUnexpected.show()
+                    }
                 }
             }
         }

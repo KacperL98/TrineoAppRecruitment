@@ -21,41 +21,40 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
 
     override fun setUp() {
         loginButtonAction()
-        handleExceptionLogin()
+        observeResult()
     }
 
-    private fun handleExceptionLogin() {
+    private fun observeResult() {
         loginViewModel.result.observe(viewLifecycleOwner) {
-            when (it) {
+            with(binding) {
+                when (it) {
+                    Error -> {
+                        appbar.bannerErrorAuthenticationAuthorization.banner.gone()
+                        progressBar.gone()
+                        errorUnexpected.show()
+                    }
 
-                Error -> {
-                    binding.appbar.bannerErrorAuthenticationAuthorization.banner.gone()
-                    binding.progressBar.gone()
-                    binding.errorUnexpected.show()
-                }
+                    Loading -> {
+                        appbar.bannerErrorAuthenticationAuthorization.banner.gone()
+                        errorUnexpected.gone()
+                    }
 
-                Loading -> {
-                    binding.appbar.bannerErrorAuthenticationAuthorization.banner.gone()
-                    binding.errorUnexpected.gone()
-                }
+                    LoginSuccess -> {
+                        val intent = Intent(requireContext(), CamerasActivity::class.java)
+                        requireActivity().startActivity(intent)
+                    }
 
-                LoginSuccess -> {
-                    val intent = Intent(requireContext(), CamerasActivity::class.java)
-                    requireActivity().startActivity(intent)
-                    binding.appbar.bannerErrorAuthenticationAuthorization.banner.gone()
-                    binding.errorUnexpected.gone()
-                }
+                    AuthorizeError -> {
+                        appbar.bannerErrorAuthenticationAuthorization.banner.show()
+                        progressBar.gone()
+                        errorUnexpected.gone()
+                    }
 
-                AuthorizeError -> {
-                    binding.appbar.bannerErrorAuthenticationAuthorization.banner.show()
-                    binding.progressBar.gone()
-                    binding.errorUnexpected.gone()
-                }
-
-                AuthenticateError -> {
-                    binding.appbar.bannerErrorAuthenticationAuthorization.banner.show()
-                    binding.progressBar.gone()
-                    binding.errorUnexpected.gone()
+                    AuthenticateError -> {
+                        appbar.bannerErrorAuthenticationAuthorization.banner.show()
+                        progressBar.gone()
+                        errorUnexpected.gone()
+                    }
                 }
             }
         }

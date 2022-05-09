@@ -20,6 +20,7 @@ class CamerasActivity : BaseActivity<ActivityCamerasBinding>() {
         get() = ActivityCamerasBinding::inflate
 
     override fun setUp() {
+        //        onClickToolbar()
         replaceFragment(CamerasFragment())
 
         camerasViewModel.restart.observe(this) {

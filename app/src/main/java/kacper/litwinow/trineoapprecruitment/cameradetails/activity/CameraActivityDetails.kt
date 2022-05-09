@@ -1,7 +1,9 @@
 package kacper.litwinow.trineoapprecruitment.cameradetails.activity
 
 import android.view.LayoutInflater
+import android.view.MenuItem
 import dagger.hilt.android.AndroidEntryPoint
+import kacper.litwinow.trineoapprecruitment.R
 import kacper.litwinow.trineoapprecruitment.base.BaseActivity
 import kacper.litwinow.trineoapprecruitment.cameradetails.fragment.CameraFragmentDetails
 import kacper.litwinow.trineoapprecruitment.cameras.fragment.CAMERA_KEY
@@ -18,6 +20,8 @@ class CameraActivityDetails : BaseActivity<ActivityCameraDetailsBinding>() {
         get() = ActivityCameraDetailsBinding::inflate
 
     override fun setUp() {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         replaceFragment(CameraFragmentDetails.createInstance(cameraInfo))
     }
+
 }

@@ -7,8 +7,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 private const val KEY = "kacper.litwinow.trineoapprecruitment"
-private const val COOKIE = "kacper.litwinow.trineoapprecruitment.cookie"
-
+private const val COOKIE_KEY = "kacper.litwinow.trineoapprecruitment.cookie"
 
 class CookiesPreferencesImpl @Inject constructor(
     @ApplicationContext private val context: Context
@@ -20,11 +19,11 @@ class CookiesPreferencesImpl @Inject constructor(
     override fun addCookies(cookies: HashSet<String>) {
         preferences.edit(commit = true) {
 
-            putStringSet(COOKIE, cookies)
+            putStringSet(COOKIE_KEY, cookies)
         }
     }
 
     override fun receiveCookies(): HashSet<String> {
-        return preferences.getStringSet(COOKIE, emptySet())?.toHashSet() ?: hashSetOf()
+        return preferences.getStringSet(COOKIE_KEY, emptySet())?.toHashSet() ?: hashSetOf()
     }
 }

@@ -1,5 +1,7 @@
 package kacper.litwinow.trineoapprecruitment.model
 
+import androidx.annotation.StringRes
+import kacper.litwinow.trineoapprecruitment.R
 import java.io.Serializable
 
 private const val NAME_INDEX = 2
@@ -22,12 +24,12 @@ class Camera : ArrayList<Any?>(), Serializable {
             statusCamera()
         )
 
-    fun getName() = this[NAME_INDEX] as String?
-    fun getGuid() = this[GUID_INDEX] as String?
-    fun getSerialNumber() = this[SERIAL_NUMBER_INDEX] as String?
-    fun getTimezone() = this[TIMEZONE_INDEX] as String?
-    fun getIp() = this[IP_ADDRESS_INDEX] as String?
-    fun getVideoStatus() = this[VIDEO_STATUS_INDEX] as String?
+    private fun getName() = this[NAME_INDEX] as String?
+    private fun getGuid() = this[GUID_INDEX] as String?
+    private fun getSerialNumber() = this[SERIAL_NUMBER_INDEX] as String?
+    private fun getTimezone() = this[TIMEZONE_INDEX] as String?
+    private fun getIp() = this[IP_ADDRESS_INDEX] as String?
+    private fun getVideoStatus() = this[VIDEO_STATUS_INDEX] as String?
 
     private fun statusCamera() = (this[DEVICE_STATUS_INDEX] as Double?)?.toInt()
 }
@@ -41,14 +43,16 @@ data class CameraInfo(
     val video_status: String?,
     val statusCamera: Int?,
 ) : Serializable {
-    fun getDeviceStatus(): String {
+    //TODO add correct strings
+    @StringRes
+    fun getDeviceStatus() : Int {
         return when (statusCamera?.countOneBits()) {
-            0 -> "No Change"
-            8 -> "Password protected"
-            18 -> "Streaming"
-            20 -> "Registered"
-            17 -> "Camera On"
-            else -> "Offline"
+            0 -> R.string.no_change_camera
+            8 -> R.string.password_protected_camera
+            18 -> R.string.streaming_camera
+            20 -> R.string.registered_camera
+            17 -> R.string.camera_on_camera
+            else -> R.string.offline_camera
         }
     }
 }

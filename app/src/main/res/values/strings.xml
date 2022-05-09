@@ -19,6 +19,7 @@
     //Cameras
     <string name="list_cameras">Cameras</string>
     <string name="camera_list_downloaded">Camera list downloaded</string>
+    <string name="logout">logout</string>
     <string name="error_unexpected_camera_list">An unexpected problem has occurred, please close applications and login again!</string>
     //Cameras
 
@@ -29,6 +30,11 @@
     <string name="video_status_camera">Video status:</string>
     <string name="guid_camera">Guid:</string>
     <string name="camera_status">Camera status:</string>
-    //DetailsCamera
 
+    <string name="no_change_camera">No Change</string>
+    <string name="password_protected_camera">Password protected</string>
+    <string name="streaming_camera">Streaming</string>
+    <string name="registered_camera">Registered</string>
+    <string name="camera_on_camera">Camera On</string>
+    <string name="offline_camera">Offline</string>
 </resources>

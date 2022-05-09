@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:padding="@dimen/normal_padding">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/camera_default_img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

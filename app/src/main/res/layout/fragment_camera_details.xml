@@ -1,161 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:isScrollContainer="true">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_back_arrow"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_back"/>
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_back_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back" />
 
 
-    <ImageView
-        android:id="@+id/camera_default_img"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/camera_details_size_m"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_back_arrow" />
+        <ImageView
+            android:id="@+id/camera_default_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_details_size_m"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_back_arrow" />
 
-    <TextView
-        android:id="@+id/camera_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:textSize="@dimen/medium_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/camera_default_img"
-        tools:text="Camera Name" />
+        <TextView
+            android:id="@+id/camera_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/camera_default_img"
+            tools:text="Camera Name" />
 
-    <TextView
-        android:id="@+id/txt_camera_timezone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:text="@string/timezone_camera"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/camera_name" />
+        <TextView
+            android:id="@+id/txt_camera_timezone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/timezone_camera"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/camera_name" />
 
-    <TextView
-        android:id="@+id/timezone_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintStart_toEndOf="@+id/txt_camera_timezone"
-        app:layout_constraintTop_toBottomOf="@+id/camera_name"
-        tools:text="Default" />
+        <TextView
+            android:id="@+id/timezone_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintStart_toEndOf="@+id/txt_camera_timezone"
+            app:layout_constraintTop_toBottomOf="@+id/camera_name"
+            tools:text="Default" />
 
-    <TextView
-        android:id="@+id/txt_ip_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:text="@string/ip_camera"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timezone_camera" />
+        <TextView
+            android:id="@+id/txt_ip_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/ip_camera"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timezone_camera" />
 
-    <TextView
-        android:id="@+id/ip_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ip_camera"
-        tools:text="Default" />
+        <TextView
+            android:id="@+id/ip_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ip_camera"
+            tools:text="Default" />
 
-    <TextView
-        android:id="@+id/txt_serial_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:text="@string/serial_number_camera"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ip_camera" />
+        <TextView
+            android:id="@+id/txt_serial_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/serial_number_camera"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ip_camera" />
 
-    <TextView
-        android:id="@+id/serial_number_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_serial_number"
-        tools:text="Default" />
+        <TextView
+            android:id="@+id/serial_number_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_serial_number"
+            tools:text="Default" />
 
-    <TextView
-        android:id="@+id/txt_guid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:text="@string/guid_camera"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/serial_number_camera" />
+        <TextView
+            android:id="@+id/txt_guid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/guid_camera"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serial_number_camera" />
 
-    <TextView
-        android:id="@+id/guid_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_guid"
-        tools:text="Default" />
+        <TextView
+            android:id="@+id/guid_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_guid"
+            tools:text="Default" />
 
-    <TextView
-        android:id="@+id/txt_status_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:textSize="@dimen/normal_text_size"
-        android:padding="@dimen/normal_padding"
-        android:text="@string/camera_status"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guid_camera" />
+        <TextView
+            android:id="@+id/txt_status_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/camera_status"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guid_camera" />
 
-    <TextView
-        android:id="@+id/camera_status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="@dimen/normal_padding"
-        android:textSize="@dimen/normal_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_status_camera"
-        app:layout_constraintTop_toBottomOf="@+id/guid_camera"
-        tools:text="Default" />
+        <TextView
+            android:id="@+id/camera_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_status_camera"
+            app:layout_constraintTop_toBottomOf="@+id/guid_camera"
+            tools:text="Default" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
